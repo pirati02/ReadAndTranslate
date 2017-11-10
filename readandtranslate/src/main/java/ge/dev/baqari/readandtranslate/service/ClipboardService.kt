@@ -76,7 +76,8 @@ class ClipboardService : Service(), ClipboardManager.OnPrimaryClipChangedListene
     }
 
     private fun translate(text: String) {
-        if (connectivityManager?.activeNetworkInfo?.isConnected!!)
+        val con = connectivityManager?.activeNetworkInfo
+        if (con != null && con.isConnected)
             (applicationContext as App).
                     apiClient?.
                     transalteApi?.
