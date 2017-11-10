@@ -17,6 +17,7 @@ import ge.dev.baqari.readandtranslate.serviceHelper.Companions.Companion.SYSTEM_
 import ge.dev.baqari.readandtranslate.serviceHelper.IOverDrawProvider
 import ge.dev.baqari.readandtranslate.serviceHelper.OverDrawProvider
 import ge.dev.baqari.readandtranslate.serviceHelper.ServiceCommangs.Companion.START_CLIPBOARD_MANAGER
+import ge.dev.baqari.readandtranslate.serviceHelper.ServiceCommangs.Companion.STOP_CLIPBOARD_MANAGER
 import ge.dev.baqari.si.R
 
 class SettingActivity : AppCompatActivity() {
@@ -62,12 +63,17 @@ class SettingActivity : AppCompatActivity() {
         startService(serviceIntent!!)
     }
 
+    private fun stopClipboardService() {
+        serviceIntent?.action = STOP_CLIPBOARD_MANAGER
+        startService(serviceIntent!!)
+    }
+
     fun runService(view: View?) {
         if (overDrawProvider?.access(SYSTEM_ALERT_INTENT_REQUEST_CODE)!!)
             startClipboardService()
     }
 
     fun stopService(view: View) {
-        stopService(intent)
+        stopClipboardService()
     }
 }
