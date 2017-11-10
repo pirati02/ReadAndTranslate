@@ -30,7 +30,7 @@ class TranslateOverlay(context: Context, params: WindowManager.LayoutParams, win
         }
     }
 
-    fun show(current: String, translated: List<String>) {
+    fun show(current: String, translated: List<String?>?) {
         textToTranslate?.text = current
         translatedList?.adapter = TranslationAdapter(translated)
         mWindowManager?.addView(rootView, mWindowParams)

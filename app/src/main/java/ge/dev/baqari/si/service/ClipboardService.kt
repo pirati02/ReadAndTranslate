@@ -78,8 +78,8 @@ class ClipboardService : Service(), ClipboardManager.OnPrimaryClipChangedListene
                 observeOn(AndroidSchedulers.mainThread())?.
                 subscribeOn(Schedulers.io())?.
                 subscribe({
-                    val result = it.rows.map { i ->
-                        i.value.text
+                    val result = it.rows?.map { i ->
+                        i.value?.text
                     }
                     translateOverlay?.show(text, result)
                 }, {

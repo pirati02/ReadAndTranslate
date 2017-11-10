@@ -9,5 +9,5 @@ class TranslateResponse {
     @SerializedName("offset")
     var offset: Int? = null
     @SerializedName("rows")
-    lateinit var rows: List<DefinitionModel>
+    var rows: List<DefinitionModel>? = null
 }

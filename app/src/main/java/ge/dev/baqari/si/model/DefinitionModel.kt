@@ -9,5 +9,5 @@ class DefinitionModel {
     @SerializedName("key")
     var key: String? = null
     @SerializedName("value")
-    lateinit var value: DefinitionValue
+    var value: DefinitionValue? = null
 }

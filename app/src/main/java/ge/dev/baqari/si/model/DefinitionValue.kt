@@ -12,7 +12,7 @@ class DefinitionValue {
     @SerializedName("Word")
     var word: String? = null
     @SerializedName("Text")
-    lateinit var text: String
+    var text: String? = null
     @SerializedName("DictType")
     var dictType: Int? = null
     @SerializedName("DictName")
