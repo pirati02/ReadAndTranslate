@@ -9,7 +9,7 @@ import android.os.IBinder
 import android.util.DisplayMetrics
 import android.view.Gravity
 import android.view.WindowManager
-import ge.dev.baqari.si.App
+import ge.dev.baqari.readandtranslate.App
 import ge.dev.baqari.readandtranslate.serviceHelper.ServiceCommangs.Companion.START_CLIPBOARD_MANAGER
 import ge.dev.baqari.readandtranslate.serviceHelper.ServiceCommangs.Companion.STOP_CLIPBOARD_MANAGER
 import ge.dev.baqari.readandtranslate.ui.TranslateOverlay
@@ -37,7 +37,7 @@ class ClipboardService : Service(), ClipboardManager.OnPrimaryClipChangedListene
         val params = WindowManager.LayoutParams(
                 WindowManager.LayoutParams.MATCH_PARENT,
                 WindowManager.LayoutParams.MATCH_PARENT,
-                WindowManager.LayoutParams.TYPE_TOAST,
+                WindowManager.LayoutParams.TYPE_PHONE,
                 WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE,
                 PixelFormat.TRANSLUCENT)
         params.gravity = Gravity.TOP or Gravity.LEFT

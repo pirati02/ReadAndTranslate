@@ -11,10 +11,6 @@ import ge.dev.baqari.si.R
 @Suppress("SENSELESS_COMPARISON")
 class TranslationAdapter(private var sentences: List<String?>?) : BaseAdapter() {
 
-    init{
-        println(sentences)
-    }
-
     override fun getCount(): Int {
         return sentences?.size!!
     }
