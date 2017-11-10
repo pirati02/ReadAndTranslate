@@ -1,4 +1,4 @@
-package ge.dev.baqari.si.serviceHelper
+package ge.dev.baqari.readandtranslate.serviceHelper
 
 class ServiceCommangs {
     companion object {

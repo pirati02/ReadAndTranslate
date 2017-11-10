@@ -1,4 +1,4 @@
-package ge.dev.baqari.si.service
+package ge.dev.baqari.readandtranslate.service
 
 import android.app.Service
 import android.content.ClipboardManager
@@ -10,9 +10,9 @@ import android.util.DisplayMetrics
 import android.view.Gravity
 import android.view.WindowManager
 import ge.dev.baqari.si.App
-import ge.dev.baqari.si.serviceHelper.ServiceCommangs.Companion.START_CLIPBOARD_MANAGER
-import ge.dev.baqari.si.serviceHelper.ServiceCommangs.Companion.STOP_CLIPBOARD_MANAGER
-import ge.dev.baqari.si.ui.TranslateOverlay
+import ge.dev.baqari.readandtranslate.serviceHelper.ServiceCommangs.Companion.START_CLIPBOARD_MANAGER
+import ge.dev.baqari.readandtranslate.serviceHelper.ServiceCommangs.Companion.STOP_CLIPBOARD_MANAGER
+import ge.dev.baqari.readandtranslate.ui.TranslateOverlay
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
 

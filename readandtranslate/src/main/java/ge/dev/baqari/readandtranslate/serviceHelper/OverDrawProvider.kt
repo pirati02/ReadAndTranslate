@@ -1,4 +1,4 @@
-package ge.dev.baqari.si.serviceHelper
+package ge.dev.baqari.readandtranslate.serviceHelper
 
 import android.app.Activity
 import android.content.Context

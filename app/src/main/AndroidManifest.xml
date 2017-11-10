@@ -16,7 +16,7 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.SettingActivity">
+        <activity android:name="ge.dev.baqari.readandtranslate.ui.SettingActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,7 +25,7 @@
         </activity>
 
         <service
-            android:name=".service.ClipboardService"
+            android:name="ge.dev.baqari.readandtranslate.service.ClipboardService"
             android:enabled="true"
             android:exported="true" />
     </application>

@@ -1,4 +1,4 @@
-package ge.dev.baqari.si.api
+package ge.dev.baqari.readandtranslate.api
 
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder

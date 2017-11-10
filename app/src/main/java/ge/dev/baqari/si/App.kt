@@ -1,7 +1,7 @@
 package ge.dev.baqari.si
 
 import android.app.Application
-import ge.dev.baqari.si.api.TranslateApiClient
+import ge.dev.baqari.readandtranslate.api.TranslateApiClient
 
 
 class App : Application() {

@@ -1,4 +1,4 @@
-package ge.dev.baqari.si.model
+package ge.dev.baqari.readandtranslate.model
 
 import com.google.gson.annotations.SerializedName
 

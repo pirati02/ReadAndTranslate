@@ -1,6 +1,6 @@
-package ge.dev.baqari.si.api
+package ge.dev.baqari.readandtranslate.api
 
-import ge.dev.baqari.si.model.TranslateResponse
+import ge.dev.baqari.readandtranslate.model.TranslateResponse
 import io.reactivex.Observable
 import retrofit2.http.GET
 import retrofit2.http.Path

@@ -1,4 +1,4 @@
-package ge.dev.baqari.si.ui
+package ge.dev.baqari.readandtranslate.ui
 
 import android.content.Intent
 import android.os.Build
@@ -8,11 +8,11 @@ import android.support.annotation.RequiresApi
 import android.support.v7.app.AppCompatActivity
 import android.view.View
 import ge.dev.baqari.si.R
-import ge.dev.baqari.si.service.ClipboardService
-import ge.dev.baqari.si.serviceHelper.Companions.Companion.SYSTEM_ALERT_INTENT_REQUEST_CODE
-import ge.dev.baqari.si.serviceHelper.IOverDrawProvider
-import ge.dev.baqari.si.serviceHelper.OverDrawProvider
-import ge.dev.baqari.si.serviceHelper.ServiceCommangs.Companion.START_CLIPBOARD_MANAGER
+import ge.dev.baqari.readandtranslate.service.ClipboardService
+import ge.dev.baqari.readandtranslate.serviceHelper.Companions.Companion.SYSTEM_ALERT_INTENT_REQUEST_CODE
+import ge.dev.baqari.readandtranslate.serviceHelper.IOverDrawProvider
+import ge.dev.baqari.readandtranslate.serviceHelper.OverDrawProvider
+import ge.dev.baqari.readandtranslate.serviceHelper.ServiceCommangs.Companion.START_CLIPBOARD_MANAGER
 
 class SettingActivity : AppCompatActivity() {
 
