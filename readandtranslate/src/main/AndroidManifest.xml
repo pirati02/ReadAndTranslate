@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="ge.dev.baqari.si">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission
         android:name="android.permission.INTERNAL_SYSTEM_WINDOW"
