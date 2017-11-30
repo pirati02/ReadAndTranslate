@@ -13,6 +13,13 @@ application should override this Application class and BaseApp interface (exampl
             apiClient = TranslateApiClient()
         }
     }
+ 
+also service in manifest: 
+    
+    <service
+            android:name="ge.dev.baqari.readandtranslate.service.ClipboardService"
+            android:enabled="true"
+            android:exported="true" />
 
 activity example is here:
 https://github.com/pirati02/ReadAndTranslate/blob/master/app/src/main/java/ge/dev/baqari/si/SettingActivity.kt
