@@ -11,16 +11,16 @@ import android.util.DisplayMetrics
 import android.view.Gravity
 import android.view.WindowManager
 import android.widget.Toast
-import ge.dev.baqari.readandtranslate.App
+import ge.dev.baqari.readandtranslate.BaseApp
+import ge.dev.baqari.readandtranslate.R
 import ge.dev.baqari.readandtranslate.serviceHelper.ServiceCommangs.Companion.START_CLIPBOARD_MANAGER
 import ge.dev.baqari.readandtranslate.serviceHelper.ServiceCommangs.Companion.STOP_CLIPBOARD_MANAGER
 import ge.dev.baqari.readandtranslate.ui.TranslateOverlay
-import ge.dev.baqari.si.R
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
 
 class ClipboardService : Service(), ClipboardManager.OnPrimaryClipChangedListener {
-
+    private var baseApplication: BaseApp? = null
     private var clipBoardManager: ClipboardManager? = null
     private var connectivityManager: ConnectivityManager? = null
     private var translateOverlay: TranslateOverlay? = null
@@ -51,6 +51,8 @@ class ClipboardService : Service(), ClipboardManager.OnPrimaryClipChangedListene
 
         if (translateOverlay == null)
             translateOverlay = TranslateOverlay(this, params, windowManager!!)
+
+        baseApplication = (application as BaseApp)
     }
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
@@ -77,8 +79,11 @@ class ClipboardService : Service(), ClipboardManager.OnPrimaryClipChangedListene
 
     private fun translate(text: String) {
         val con = connectivityManager?.activeNetworkInfo
+
+        if (baseApplication == null)
+            throw NotImplementedError("Application class must override BaseApp interface")
         if (con != null && con.isConnected)
-            (applicationContext as App).
+            (baseApplication)?.
                     apiClient?.
                     transalteApi?.
                     translate(text)?.

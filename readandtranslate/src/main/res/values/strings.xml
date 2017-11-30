@@ -1,6 +1,3 @@
 <resources>
-    <string name="app_name">SI</string>
-    <string name="start_service">Start Service</string>
-    <string name="stop_service">Stop Service</string>
     <string name="no_network">No Connection</string>
 </resources>

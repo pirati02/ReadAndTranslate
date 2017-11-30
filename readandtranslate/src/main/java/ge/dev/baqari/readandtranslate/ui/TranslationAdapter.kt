@@ -5,7 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
-import ge.dev.baqari.si.R
+import ge.dev.baqari.readandtranslate.R
 
 
 @Suppress("SENSELESS_COMPARISON")

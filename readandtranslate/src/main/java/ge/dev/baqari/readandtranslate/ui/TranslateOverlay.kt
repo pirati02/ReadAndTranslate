@@ -7,7 +7,7 @@ import android.view.LayoutInflater
 import android.view.WindowManager
 import android.widget.LinearLayout
 import android.widget.ListView
-import ge.dev.baqari.si.R
+import ge.dev.baqari.readandtranslate.R
 
 class TranslateOverlay(context: Context, params: WindowManager.LayoutParams, window: WindowManager) {
     private var rootView: LinearLayout? = null

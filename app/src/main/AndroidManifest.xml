@@ -3,4 +3,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="ge.dev.baqari.si">
 
+    <application
+        android:name=".DemoApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".SettingActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <service
+            android:name="ge.dev.baqari.readandtranslate.service.ClipboardService"
+            android:enabled="true"
+            android:exported="true" />
+    </application>
 </manifest>
